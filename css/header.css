@@ -1,0 +1,193 @@
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-attachment: fixed;
+    background-image:url(../img/messy-pizza-on-a-black-table.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    height:100vh;
+    width:100%;
+}
+header{
+    font-family:"Roboto mono";
+    left:15%;
+    position: fixed;
+    top:0;
+    width:70%;
+    z-index:100;
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em 0 3em;
+    background-color: rgb(27,28,32); /* The Fallback */
+    background-color: rgba(27, 28, 32,0.92);
+    border-left: 1px solid rgb(95,95,95);
+    border-right: 1px solid rgb(95,95,95);
+    border-top: 1px solid rgb(95,95,95);
+    bottom:0;
+    height:57px;
+    left:15%;
+    position:fixed;
+    width:70%;
+    z-index:100;
+}
+footer .footer-text{
+    order:1;
+}
+footer .footer-text p{
+    color:rgb(187, 187, 187);
+}
+footer .social-media{
+    display:flex;
+    justify-content: space-between;
+    width:30%;
+    order:2;
+}
+.social-media a i{
+    color:rgb(95, 95, 95);
+    font-size: 3em;
+    transition: color 600ms;
+
+}
+.social-media a:hover i{
+    color:white;
+}
+.social-media a:focus{
+    outline-width: 0;
+}
+.social-media a:focus i{
+    color:white;
+}
+main{
+    height:100%;
+    margin-bottom:56px;
+    margin-top:60px;
+    overflow:hidden;
+}
+body, main{
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+}
+.nav-bar{
+    background-color: #1b1c20;
+    border-bottom:1px solid rgb(95, 95, 95);
+    font-size: 14px;
+    font-weight: 500;
+    opacity:0.92;
+}
+.nav-bar-menu{
+    align-items: center;
+    border-left: 1px solid rgb(95, 95, 95);
+    border-right: 1px solid rgb(95, 95, 95);
+    display:flex;
+    font-size: 1.2em;
+    list-style: none;
+    width:100%;
+}
+.nav-list-item{
+    border-right: 1px solid rgb(95, 95, 95);
+    flex:1;
+    flex-basis:10%;
+    text-align: center;
+}
+.nav-list-item:nth-child(4){
+    border-right: 0;
+}
+.nav-list-item a{
+    color: white;
+    display:block;
+    padding:18px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 600ms;
+}
+.nav-list-item a:hover{
+    background-color: #f1f1f1;
+    color:black;
+}
+.nav-list-item a:focus{
+    box-shadow: 0 0 10pt 2pt red;
+    outline:none;
+}
+.active a {
+    background-color: rgb(95, 95, 95);
+    color:white;
+}
+.mobile-nav-bar{
+    background-color: #1b1c20;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    display:none;
+    overflow:hidden;
+    position: relative;
+}
+.mobile-nav-bar #mobile-links{
+    display:none;
+}
+.mobile-nav-bar a{
+    border-top: 1px solid rgb(95, 95, 95);
+    color:white;
+    display:block;
+    font-size: 17px;
+    padding:20px 24px;
+    text-decoration: none;
+}
+#hamburger-btn{
+    display:none;
+}
+#hamburger-btn + .btn{
+    background-color: #1b1c20;
+    border-left: 1px solid rgb(95, 95, 95);
+    color:white;
+    padding:16px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+.fa-bars{
+    font-size:2em;
+}
+#hamburger-btn:checked ~ #mobile-links {
+    display:block;
+}
+@media only screen and (max-width:1024px){
+    header, footer{
+        left:unset;
+        width: 100%;
+    }
+    main{
+        margin-top:65px;
+    }
+    .nav-bar{
+        display:none;
+    }
+    .mobile-nav-bar{
+        display:block;
+    }
+}
+@media only screen and (max-width:767px){
+    header, footer{
+        left:unset;
+        width: 100%;
+    }
+    .nav-bar{
+        display:none;
+    }
+    .mobile-nav-bar{
+        display:block;
+    }
+    footer{
+        justify-content: center;
+    }
+    footer .social-media{
+        display:none;
+    }
+    .social-media a{
+        display:none;
+    }
+}

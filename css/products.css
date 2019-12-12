@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  margin: 0;
+ 
+}
+
+.footer-text>p{
+  color:white;
+
+opacity: 1;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .container{
+      width: 70%;
+      border-left:  1px solid rgb(95, 95, 95);
+      border-right: 1px solid rgb(95, 95, 95);
+      margin:0 auto;
+      display:grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr  ;
+      color:white;
+      overflow-y:scroll;
+      background-color: rgba(27, 28, 32,0.92);
+
+  }
+  .container-item {
+      border: 1px solid white;
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      padding:1em;
+      margin:1em;
+      height: 20em;
+      background-color:white;
+
+  }
+  .container-item-image{
+   
+    margin-bottom: 35px;
+    flex:2;
+    /* background-image:url(../img/joltcola.jpg); */
+    background-size: cover;
+    background-position: center;
+   
+  }
+  
+  .container-item>a{
+    text-decoration: none;
+  }
+ 
+  .image1>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border: 3px solid orange;
+    
+    
+
+  }
+
+  .image2>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border: 3px solid orange;
+ 
+  }
+
+  .image3>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border :3px solid orange;
+    
+
+
+  }
+
+  .image4>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border :3px solid orange;
+   
+
+  }
+
+  .image5>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border :3px solid orange;
+   
+
+  }
+
+  .image6>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border :3px solid orange;
+    
+ 
+
+
+  }
+  .image7>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border :3px solid orange;
+
+
+  }
+  .image8>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border: 3px solid orange;
+
+
+  }
+  .image9>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border: 3px solid orange;
+
+
+  }
+  .image10>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border: 3px solid orange;
+
+
+  }
+  .image11>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border: 3px solid orange;
+
+
+  }
+  .image12>img{
+    margin-top: 15px;
+    object-fit: cover;
+    width: 100%;
+    border: 3px solid orange;
+
+
+  }
+
+   /* .container-item >div{
+      border: 1px solid yellow; 
+      margin-bottom: 20px;
+      word-spacing: 7em;
+      text-decoration: none;
+    
+      flex:2;
+       background-image:url(../img/joltcola.jpg);  
+      background-size: cover;
+      background-position: center;
+  } 
+   .container-item div:nth-child(2){
+      flex:1;
+      border:1px solid blue;
+  } */
+
+   .container-item div:first-child:hover{
+      opacity:1;
+      transform: scale(1.1);
+      /* transform: rotate3d(-1,0,0,90 deg)    */
+  } 
+  /* .container-item div:nth-child(2):hover{
+      opacity:1;
+      transform: scale(1.1);
+      animation: pulse 5s infinite;
+  } 
+  @keyframes pulse {
+      0% {
+        background-color: #001F3F;
+      }
+      50%{
+          background-color:greenyellow;        }
+      100% {
+        background-color:blue;
+      }
+    } 
+
+  .container-item2>a{
+    word-spacing: 7em;
+    text-decoration: none;
+  }*/
+  .itemNamePrice{
+    position: relative;
+    margin-top: -15px;
+    height: 2em;
+    width: 100%;
+    float: center;
+    background-color: none;
+  }
+  
+  .itemNamePrice>div:first-child{
+    position: relative;
+    height: 2em;
+    width: 50%;
+    float:left;
+    /* background-color:white; */
+
+    /* background-color: #CD214B; */
+  }
+  .itemNamePrice>div:nth-child(2){
+    position: relative;
+    height: 2em;
+    width: 25%;
+    float: left;
+    background-color: none;
+    
+  }
+  .itemNamePrice >div:nth-child(3){
+    position: relative;
+    height: 2em;
+    width: 25%;
+    float: left;
+    color:black;
+    background-color:white;
+  }
+
+   .shopinglogo{
+    
+    background:url(../img/shoping.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+   
+  } 
+
+
+
+  .container-item2>a{
+    word-spacing: 7em;
+    text-decoration: none;
+  }*/
+  .itemNamePrice{
+    position: relative;
+    margin-top: -15px;
+    height: 3em;
+    width: 100%;
+    float: center;
+    background-color: none;
+  }
+  
+  .itemNamePrice>div:first-child{
+    position: relative;
+    height: 2em;
+    width: 50%;
+    float:left;
+    color: black;
+    /* background-color:white; */
+  }
+  .itemNamePrice>div:nth-child(2){
+    position: relative;
+    height: 3em;
+    width: 25%;
+    float: left;
+    background-color: none;
+    
+  }
+  .itemNamePrice >div:nth-child(3){
+    position: relative;
+    height: 3em;
+    width: 25%;
+    float: left;
+    background-color:white;
+  }
+
+   .shopinglogo{
+    
+    background:url(../img/shoping.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+   
+  } 
+
+  .itemName{
+    font: 2em;
+    color:orange;
+    animation: rotate 2s 1;
+  }
+  @keyframes rotate{
+   
+      0%{
+        letter-spacing: 2px;
+      }
+      20%{
+        letter-spacing: 4px;
+        
+      }
+      40%{
+        letter-spacing: 6px;
+        /* -webkit-transform: rotate(90deg); */
+      }
+      60%{  
+        letter-spacing: 8px;
+        
+      }
+      80%{
+        letter-spacing: 6px;
+        /* -webkit-transform: rotate(180deg); */
+      }
+      100%{
+        letter-spacing: 4px; 
+      }
+
+   /* 0%{
+  -webkit-transform: rotate(-90deg);
+}
+
+  25%{
+  -webkit-transform: rotate(-45deg);
+}
+
+  50%{
+  -webkit-transform: rotate(0 deg);
+}
+  75%{
+  -webkit-transform: rotate(45deg);
+}
+
+  100%{
+  -webkit-transform: rotate(90deg);
+} */
+}
+.fa{
+font-size: 50px;
+color: orange;
+}
+
+.fa-thumbs-up:hover{
+color:green;
+
+}
+
+.fa-thumbs-down:hover{
+color:red;
+
+}
+
+
+
+
+
+
+
+/* .switch {
+position: relative;
+
+width: 150px;
+height: 25px;
+text-align: left;
+
+background:whitesmoke;
+border-radius: 25px;
+}
+.switch span {
+position: relative;
+width: 20px;
+height: 4px;
+
+margin: -2px 0px 0px 0px;
+background: #fff;
+display: block;
+
+transition: all 0.2s ease;
+}
+.switch span:after {
+content: ""; 
+display: block;
+position: relative;
+width: 4px;
+height: 12px;
+margin-top: -8px;
+background: #fff;
+transition: all 0.2s ease;
+}
+input[type=radio] {
+display: none;
+}
+.switch label {
+cursor: pointer;
+color: rgba(0,0,0,0.2);
+width: 40px;
+line-height: 10px;
+transition: all 0.2s ease;
+}
+label[for=yes] {
+position: relative;
+left: 0px;
+height: 10px;
+}
+label[for=no] {
+position: relative;
+right: 0px;
+}
+#no:checked ~ .switch {
+background: none;
+}
+#no:checked ~ .switch span {
+background: #fff;
+margin-left: -8px;
+}
+#no:checked ~ .switch span:after {
+background: #fff;
+height: 20px;
+margin-top: -8px;
+margin-left: 8px;
+}
+#yes:checked ~ .switch label[for=yes] {
+color:green;
+}
+#no:checked ~ .switch label[for=no] {
+color:red;
+} */

@@ -1,0 +1,152 @@
+.container{
+    width: 70%;
+    border-left:  1px solid rgb(95, 95, 95);
+    border-right: 1px solid rgb(95, 95, 95);
+    height:100%;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 0 3em 0;
+    background-color: rgb(27,28,32); /* The Fallback */
+    background-color: rgba(27, 28, 32,0.92);
+    overflow:auto;
+}
+.gallery{
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+    margin:2em 0 2em 0;
+    flex-wrap: wrap;
+}
+.gallery img{
+    border-radius: 5px;
+    height:225px;
+    width:225px;
+	filter: grayscale(100%);
+	transition: 300ms ease-in-out;
+}
+.gallery img:hover{
+    filter: grayscale(0);
+}
+.gallery a:focus img{
+    filter: grayscale(0);
+    box-shadow: 0 0 10pt 2pt red;
+}
+.index-text{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.index-text h1{
+    margin-bottom: 1em;
+    font-size: 3em;
+    color:white;
+    font-family:"Inconsolata";
+}
+.index-text p{
+    font-size: 1.2em;
+    color:white;
+    font-family:"Roboto mono";
+}
+.index-text h1 strong{
+    color:orange;
+}
+.index-text span{
+    color:#CD214B;
+}
+.index-text strong{
+    color:#CD214B;
+}
+/* Ipad Pro Portrait */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait){
+    .index-text{
+        margin-top:5em;
+    }
+    .gallery{
+        margin-bottom:5em;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .container{
+        width:100%;
+    }
+    .gallery img{
+        filter: grayscale(0);
+    }
+    .index-text{
+        padding-left:2em;
+        padding-right:2em;
+    }
+    .index-text p{
+        font-size: 2em;
+    }
+}
+@media only screen and (min-width:440px) and (max-width:768px){
+    .gallery-item{
+        margin:5px;
+    }
+    .gallery img{
+        filter: grayscale(0);
+    }
+    .container{
+        width:100%;
+    }
+    .index-text{
+        padding-left:2em;
+        padding-right:2em;
+        margin-bottom:2em;
+    }
+    .index-text p{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width:823px) and (orientation: landscape) {
+    .gallery{
+        flex-direction: row;
+    }
+    .gallery img{
+        width:200px;
+        height:200px;
+        filter: grayscale(0);
+    }
+}
+@media only screen and (min-width:320px) and (max-width:440px){
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery img{
+        filter: grayscale(0);
+    }
+    .gallery-item{
+        margin-bottom:15px;
+        margin-top:15px;
+    }
+    .container{
+        width:100%;
+    }
+    .index-text{
+        padding-left:2em;
+        padding-right:2em;
+    }
+
+}
+/* Iphone 5 landscape */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-width : 568px) 
+and (orientation : landscape){
+    .index-text p{
+        font-size: 1.2em;
+    }
+    .gallery img {
+        width:150px;
+        height:150px;
+    }
+}

@@ -1,0 +1,175 @@
+/*om oss here */
+* {
+  box-sizing: border-box;
+ 
+}
+
+.container {
+  background-color:rgba(27, 28, 32,0.92) ;
+  width: 70%;
+  left:15%;
+  top:60px;
+  height:auto;
+  position: absolute;
+  
+}
+   .container__image {
+    padding: 65px 0px 5px 0px;
+    width: 103%;
+  height:480px;
+   
+}
+  .container__image:hover{
+    opacity:1;
+    transform: scale(1.1);
+  }
+  
+  .container__text {
+    font-family: inherit;
+      font-size: 21px;
+      color:white;
+      text-align: justify;
+      
+  }
+  h{
+    font-size: 60px;
+    color:orangered;  
+  }
+  b{
+    color:red;
+  }
+  /*Gallery here*/
+  div.gallery {
+    width: 105%;
+    height: 230px;
+    border: 2px solid red;
+    }
+   div.gallery:hover {
+    border: 1px solid #777;
+    }
+   div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+   div.desc {
+    text-align: center;
+    color:white;
+    background-color: maroon;
+    padding:6px;
+    overflow: auto;
+   }
+   
+/*vision here */
+.vision{
+font-family: inherit;
+font-weight: normal;
+color:white;
+text-align: justify;
+padding-left: 2px;
+padding-right: 2px;
+padding-top: 40px;
+}
+.vision h2{
+color:orangered;
+font-size: 50px;
+text-align: center;
+
+}
+
+@media screen and (min-width: 601px) {
+  div.vision {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.vision {
+    font-size: 30px;
+  }
+}
+
+/*animation slide here */
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+
+  }
+  
+ 
+  div#slider { 
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 50px;
+    
+   }
+  div#slider figure img {
+     width: 10%;
+     float: left;
+   }
+  div#slider figure { 
+    position: relative;
+    width: 400%;
+    height: 150px;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 5s slidy infinite; 
+  }
+  
+div.slider:hover{
+  opacity:1;
+transform: scale(1.1);
+}
+.clearfix {
+clear: both;
+}
+@media only screen and (min-width: 1280px) {
+.contain {
+  width: 1200px;
+  margin: 0 auto;
+
+}
+}
+@media only screen and (max-width: 1139px) {
+.contain .social {
+  width: 1000px;
+  display: block;
+}
+.social h1 {
+  margin: 0px;
+}
+}
+@media only screen and (max-width: 950px) {
+
+.footer .col {
+  width: 33%;
+
+}
+.footer .col h1 {
+  font-size: 14px;
+}
+.footer .col ul li {
+  font-size: 13px;
+}
+}
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+.footer .col {
+  width: 100%;
+}
+
+}
